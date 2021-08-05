@@ -12840,7 +12840,8 @@
         "y": 400,
         "wires": [
             [
-                "683f655.3cdba9c"
+                "683f655.3cdba9c",
+                "a90ce33e23bb62e2"
             ]
         ]
     },
@@ -13007,6 +13008,52 @@
         "noerr": 0,
         "x": 760,
         "y": 340,
+        "wires": [
+            [
+                "c8db0462.894fd8"
+            ]
+        ]
+    },
+    {
+        "id": "a90ce33e23bb62e2",
+        "type": "change",
+        "z": "74e7ce82.3e484",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 480,
+        "wires": [
+            [
+                "44043b8f3b1d044f"
+            ]
+        ]
+    },
+    {
+        "id": "44043b8f3b1d044f",
+        "type": "function",
+        "z": "74e7ce82.3e484",
+        "name": "",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 480,
         "wires": [
             [
                 "c8db0462.894fd8"
